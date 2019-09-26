@@ -1,0 +1,142 @@
+@import '../common/index.css';
+
+.van-tabs {
+	position: relative;
+	-webkit-tap-highlight-color: transparent
+}
+
+.van-tabs__wrap {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	display: -webkit-flex;
+	display: flex;
+	background-color: #fff
+}
+
+.van-tabs__wrap--page-top {
+	position: fixed
+}
+
+.van-tabs__wrap--content-bottom {
+	top: auto;
+	bottom: 0
+}
+
+.van-tabs__wrap--scrollable .van-tab {
+	-webkit-flex: 0 0 22%;
+	flex: 0 0 22%
+}
+
+.van-tabs__scroll--card {
+	border: 2upx solid #f44;
+	border-radius: 4upx
+}
+
+.van-tabs__nav {
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-user-select: none;
+	user-select: none
+}
+
+.van-tabs__nav--line {
+	height: 100%
+}
+
+.van-tabs__nav--card {
+	height: 60upx
+}
+
+.van-tabs__nav--card .van-tab {
+	line-height: 60upx;
+	color: #f44;
+	border-right: 2upx solid #f44
+}
+
+.van-tabs__nav--card .van-tab:last-child {
+	border-right: none
+}
+
+.van-tabs__nav--card .van-tab.van-tab--active {
+	color: #fff;
+	background-color: #f44
+}
+
+.van-tabs__line {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	height: 6upx;
+	background-color: #f44;
+	border-radius: 6upx
+}
+
+.van-tabs--line {
+	padding-top: 88upx
+}
+
+.van-tabs--line .van-tabs__wrap {
+	height: 88upx
+}
+
+.van-tabs--card {
+	padding-top: 60upx;
+	margin: 0 30upx
+}
+
+.van-tabs--card .van-tabs__wrap {
+	height: 60upx
+}
+
+.van-tabs__content {
+	overflow: hidden
+}
+
+.van-tab,
+.van-tabs__track {
+	position: relative
+}
+
+.van-tab {
+	min-width: 0;
+	padding: 0 10upx;
+	font-size: 28upx;
+	line-height: 88upx;
+	color: #7d7e80;
+	text-align: center;
+	cursor: pointer;
+	box-sizing: border-box;
+	-webkit-flex: 1;
+	flex: 1
+}
+
+.van-tab--active {
+	font-weight: 500;
+	color: #333
+}
+
+.van-tab--disabled {
+	color: #c9c9c9
+}
+
+.van-tab__title--dot:after {
+	display: inline-block;
+	width: 16upx;
+	height: 16upx;
+	vertical-align: middle;
+	background-color: #f44;
+	border-radius: 100%;
+	content: ""
+}
+
+.van-tab__title__info {
+	position: relative !important;
+	top: -1upx !important;
+	display: inline-block;
+	-webkit-transform: translateX(0) !important;
+	transform: translateX(0) !important
+}
